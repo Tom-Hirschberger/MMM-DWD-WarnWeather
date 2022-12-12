@@ -164,8 +164,8 @@ Module.register("MMM-DWD-WarnWeather", {
 			duration.className = 'duration';
 			duration.innerHTML = start + ' - ' + end;
 
-			var newLineSingleWarning = document.createElement("br");
-			var newLineMultipleWarning = document.createElement("br");
+			// var newLineSingleWarning = document.createElement("br");
+			// var newLineMultipleWarning = document.createElement("br");
 
 			description.appendChild(headline);
 			description.appendChild(duration);
@@ -173,10 +173,10 @@ Module.register("MMM-DWD-WarnWeather", {
 			warnWrapper.appendChild(description);
 			wrapper.appendChild(warnWrapper);
 
-			wrapper.appendChild(newLineSingleWarning);
-			if (this.warnings.length > 1) {
-			    wrapper.appendChild(newLineMultipleWarning);
-			}
+			// wrapper.appendChild(newLineSingleWarning);
+			// if (this.warnings.length > 1) {
+			//     wrapper.appendChild(newLineMultipleWarning);
+			// }
 		}
 
 		//Log.info(wrapper);
